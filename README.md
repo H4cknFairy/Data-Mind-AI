@@ -54,6 +54,27 @@ streamlit run app.py
 
 Streamlit will print a local URL, normally `http://localhost:8501`.
 
+## Deploy on Streamlit Community Cloud
+
+1. Open [share.streamlit.io](https://share.streamlit.io/) and sign in with GitHub.
+2. Select **Create app** and choose the `H4cknFairy/Data-Mind-AI` repository.
+3. Set the branch to `main` and the main file to `app.py`.
+4. Open **Advanced settings**, add this secret, and replace the placeholder with your own key:
+
+   ```toml
+   GEMINI_API_KEY = "your_api_key_here"
+   ```
+
+5. Select **Deploy**. Streamlit will provide a live URL for the app.
+
+Keep the live URL in the repository description or add it here after deployment:
+
+```text
+Live app: https://your-app-name.streamlit.app
+```
+
+Do not commit `.env` or API keys to GitHub. Configure secrets through Streamlit Community Cloud instead.
+
 ## Project structure
 
 ```text
